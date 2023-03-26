@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lets manage</title>
+</head>
+<body>
+    <header>
+    <h1>Project Management App</h1>
+  </header>
+  <main>
+    <form>
+      <label for="name">Task Name:</label>
+      <input type="text" id="name" required>
+      <br>
+      <label for="description">Task Description:</label>
+      <textarea id="description"></textarea>
+      <br>
+      <label for="due-date">Due Date:</label>
+      <input type="date" id="due-date">
+      <br>
+      <label for="priority">Priority:</label>
+      <select id="priority">
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+      <br>
+      <button type="submit">Add Task</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Task Name</th>
+          <th>Task Description</th>
+          <th>Due Date</th>
+          <th>Priority</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="task-list">
+        
+      </tbody>
+    </table>
+  </main>
+  <footer>
+    <p>Project Management App &copy; 2023</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
